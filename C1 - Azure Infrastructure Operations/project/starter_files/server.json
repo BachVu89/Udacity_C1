@@ -1,13 +1,28 @@
 {
-	"variables": {
-		"client_id": "{{env `ARM_CLIENT_ID`}}",
-		"client_secret": "{{env `ARM_CLIENT_SECRET`}}",
-		"subscription_id": "{{env `ARM_SUBSCRIPTION_ID`}}"
-	},
-	"builders": [{
-		**YOUR CODE HERE**
-	}],
-	"provisioners": [{
+  "variables": {
+    "client_id": "f04bd3f3-4265-477c-9e84-b3f3936e0d0e",
+    "client_secret": "RQw8Q~jrWDO2EhAOhQOTEgFWwioizMtFTOCi1cBn",
+    "subscription_id": "157081ad-2288-4aa4-b6d0-69f2165b7326"
+  },
+  "builders": [{
+    "type": "azure-arm",
+ 
+    "client_id": "INSERT APPLICATION_ID FROM SERVICE PRINCIPAL DETAILS",
+    "client_secret": "INSERT SECRET_KEY FROM SERVICE PRINCIPAL DETAILS",
+    "subscription_id": "INSERT SUBSCRIPTION_ID FROM SERVICE PRINCIPAL DETAILS",
+ 
+    "os_type": "Linux",
+    "image_publisher": "Canonical",
+    "image_offer": "UbuntuServer",
+    "image_sku": "18.04-LTS",
+ 
+    "managed_image_resource_group_name": "Azuredevops",
+    "managed_image_name": "myPackerImage",
+ 
+    "location": "East US",
+    "vm_size": "Standard_B1s"
+  }],
+  "provisioners": [{
 		"inline": [
 			"echo 'Hello, World!' > index.html",
 			"nohup busybox httpd -f -p 80 &"
