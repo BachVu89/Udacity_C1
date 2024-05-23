@@ -1,3 +1,1 @@
-az policy assignment create --name "tagging-policy" \
---policy "tagging-policy" \
---params "{ \"tagName\" : \"tagging-policy\" }"
+az policy assignment create --name "tagging-policy-assignment" --policy "tagging-policy" --description "required tags" --display-name "tagging-policy"
