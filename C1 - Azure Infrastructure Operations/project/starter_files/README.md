@@ -24,8 +24,6 @@ For this project, you will write a Packer template and a Terraform template to d
   - Assign "tagging-policy" by using script in assign-policy.sh
 2. Packer
   - az login in azure cli
-  - Create resource group: "az group create -n vm_ubuntu -l eastus"
-  - Create Azure credentials: "az ad sp create-for-rbac --role Contributor --scopes /subscriptions/<subscription_id> --query "{ client_id: appId, client_secret: password, tenant_id: tenant }"" and save the out put to .env     file
   - cd packer
   - Create new file serverImage.json to define packer template
   - Open Powershell window in packer folder
