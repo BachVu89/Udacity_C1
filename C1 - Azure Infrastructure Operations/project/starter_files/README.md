@@ -31,7 +31,7 @@ For this project, you will write a Packer template and a Terraform template to d
 3. Terraform
   - providers.tf : define required providers
   - main.tf: define the resource to be created
-  - variables.tf: define varibles to be used in main.tf ==> you can change resoure group name, resoure group location, also the username, password or the number of VMs to be created here
+  - variables.tf: define varibles to be used in main.tf 
   - outputs.tf: how the output will be shown
   - Run "terraform init" to initialize needed providers
   - Run "terraform plan -out solution.plan" to create the plan
