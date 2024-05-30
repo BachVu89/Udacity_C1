@@ -11,13 +11,13 @@ variable "packer_resource_group" {
 
 variable "username" {
   description = "The login of the virtual machines."
-  default     = "ducda177"
+  default     = "bachvh"
   type        = string
 }
 
 variable "password" {
   description = "The password of the virtual machines."
-  default     = "MyStr00ngP@$$w0rD"
+  default     = "password@123A!"
   type        = string
 }
 
