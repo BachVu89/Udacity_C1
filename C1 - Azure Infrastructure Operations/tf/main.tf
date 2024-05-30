@@ -35,7 +35,7 @@ resource "azurerm_network_security_group" "my_nsg" {
 
   tags = {
     project = "udacity_devops"
-    createdBy= "ducda177"
+    createdBy= "bachvh"
   }
 }
 
@@ -183,7 +183,7 @@ resource "azurerm_availability_set" "my_availability_set" {
 
   tags = {
     project = "udacity-devops"
-    createdBy= "ducda177"
+    createdBy= "bachvh"
   }
 }
 
@@ -215,7 +215,7 @@ resource "azurerm_linux_virtual_machine" "my_linux_virtual_machine" {
 
   tags = {
     project = "udacity_devops"
-    createdBy= "ducda177"
+    createdBy= "bachvh"
   }
 }
 
